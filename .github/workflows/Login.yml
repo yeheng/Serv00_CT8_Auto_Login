@@ -1,5 +1,7 @@
 name: Login
 
+run-on: ['self-hosted', 'linux']
+
 on:
   workflow_dispatch:
   
