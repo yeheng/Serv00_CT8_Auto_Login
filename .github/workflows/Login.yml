@@ -1,7 +1,5 @@
 name: Login
 
-run-on: ['self-hosted', 'linux']
-
 on:
   workflow_dispatch:
   
@@ -16,8 +14,9 @@ env:
 
 jobs:  
   login:  
-    runs-on: ubuntu-latest  
-  
+    # runs-on: ubuntu-latest  
+    runs-on: ['self-hosted', 'linux']
+
     steps:  
       - name: Checkout repository  
         uses: actions/checkout@v3  
